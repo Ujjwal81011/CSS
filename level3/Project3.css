@@ -1,0 +1,8 @@
+*{margin: 0;
+padding: 0;}
+h1{background-color: red;
+    text-align: center;
+text-transform: capitalize;}
+p{font-family:Lemon ;}
+#outer{font-size: 25px;}
+#inner{font-size: 10px;}

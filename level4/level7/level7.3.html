@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transform rotate, Scale, translate, skew</title>
+    <style>
+        .box{height: 75px;
+            width: 75px;
+        border: 2px solid;
+        border-radius: 5px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        margin: 5px;
+        transition: all 3s ease-in-out;}
+        #box1:hover{transform: Rotate(45deg);}
+        #box2:hover{transform: Translate(50px, 50px);}
+        #box3:hover{transform: rotateX(60deg);}
+        #box4:hover{transform: rotatey(60deg);}
+        #box5:hover{transform: Scale(1.5);}
+        #box6:hover{transform: skew(45deg);}
+    </style>
+</head>
+<body>
+    <div id="box1" class="box" style="background-color: palegreen;">45 degree</div>
+    <div id="box2" class="box" style="background-color: palegoldenrod;">Translate</div>
+    <div id="box3" class="box" style="background-color: aqua;">Rotatex</div>
+    <div id="box4" class="box" style="background-color: cadetblue;">Rotatey</div>
+    <div id="box5" class="box" style="background-color: cyan;">Scale</div>
+    <div id="box6" class="box" style="background-color: palevioletred">skew</div>
+</body>
+</html>

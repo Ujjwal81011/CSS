@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+    }
+        nav{
+            padding: 5px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-around;
+            }
+        a{text-decoration: none;}
+        .mishra{
+            height: 93.5dvh;
+            width: 100%;
+            background: url(./home.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .ujjwal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input{
+            border: none;
+            outline: none;
+            padding: 8px 10px;
+
+        }
+        .wrapper{
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            background: url(./download.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            transition: .3s all ease-in-out;
+        }
+        .wrapper:hover{
+            height: 140px;
+            width: 140px;
+        }
+        #B{border: 3px solid;
+        border-radius: 20px;}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../level7/level7.5.html">Home</a>
+        <a href="../level7/menu.jpg">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+    </nav>
+    <div class="mishra">
+        <div class="wrapper">
+        </div>
+        <div class="ujjwal">
+        <label for="U">Username:</label>
+        <input type="text" style="border-radius: 20px; border: 2px solid black;" id="U" placeholder="enter the username">
+        <label for="P">Place:</label>
+        <input type="text" style="border-radius: 20px; border: 2px solid black;" id="P" placeholder="enter your favorite place">
+        <label for="C">Contact No.:</label>
+        <input type="text" style="border-radius: 20px; border: 2px solid black;" id="C" placeholder="enter your phone no.">
+        <label for="D">Date:</label>
+        <input type="date" style="border-radius: 20px; border: 2px solid black;" id="D"><br>
+        <input type="submit" id="B">
+        </div>
+    </div>
+</body>
+</html>

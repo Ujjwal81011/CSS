@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        .box{height: 70px;
+            width: 70px;
+            border: 2px solid;}
+        #D{height: 400px;
+            width: 600px;
+            border: 2px solid;
+            background-color: lavender;
+            display: grid;
+            grid-template-columns: 70px 100px;
+            grid-template-rows: 50px 100px;
+            margin: 10px;
+            padding: 10px;}
+        #box1{background-color: palegreen;
+            grid-column: 1 /1;
+            grid-row: 2 / 2;}
+        #box2{background-color: aquamarine;
+            grid-row: 1 / 1;
+            grid-column: 1 / 2;}
+        #box3{background-color: bisque;}
+        #box4{background-color: pink;}
+    </style>
+</head>
+<body>
+    <div id="D">
+        <div id="box1" class="box">BOX1</div>
+        <div id="box2" class="box">BOX2</div>
+        <div id="box3" class="box">BOX3</div>
+        <div id="box4" class="box">BOX4</div>
+    </div>
+</body>
+</html>

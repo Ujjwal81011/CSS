@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        *{margin: 5px;
+        padding: 5px;}
+        .box{height: 50px;
+            width: 50px;
+            border: 2px solid;
+            border-radius: 10px;}
+        #box1:active{transform: rotate(45deg);
+                    transition: all;
+                    transition-duration: 5s;
+                    transition-delay: 1s;}
+        #box2:hover{transform: rotateX(60deg);
+                    transition: all;
+                    transition-duration: 5s;
+                    transition-delay: 1s;}
+        #box3:hover{transform: rotateY(120deg);
+                    transition: all;
+                    transition-duration: 5s;
+                    transition-delay: 1s;}
+        #box4:hover{transform: rotateZ(240deg);
+                    transition: all;
+                    transition-duration: 5s;
+                    transition-delay: 1s;}
+    </style>
+</head>
+<body>
+    <div id="box1" class="box" style="background-color: aqua;">Rotate</div>
+    <div id="box2" class="box" style="background-color: aquamarine;">Rotate</div>
+    <div id="box3" class="box" style="background-color: palegreen;">Rotate</div>
+    <div id="box4" class="box" style="background-color: palegoldenrod;">Rotate</div>
+</body>
+</html>

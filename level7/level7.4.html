@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew</title>
+    <style>
+        *{margin: 5px;
+        padding: 5px;}
+        .box{height: 50px;
+            width: 50px;
+            border: 2px solid;
+            border-radius: 10px;}
+        #box1:hover{transform: translate(50px);
+                    transition: all;
+                    transition-duration: 5s;
+                    transition-delay: 1s;}
+        #box2:hover{transform: translateX(60px);
+                    transition: all;
+                    transition-duration: 5s;
+                    transition-delay: 1s;}
+        #box3:hover{transform: skew(110deg);
+                    transition: all;
+                    transition-duration: 5s;
+                    transition-delay: 1s;}
+        #box4:hover{transform: skew(45deg);
+                    transition: all;
+                    transition-duration: 5s;
+                    transition-delay: 1s;}
+    </style>
+</head>
+<body>
+    <div id="box1" class="box" style="background-color: aqua;">Rotate</div>
+    <div id="box2" class="box" style="background-color: aquamarine;">Rotate</div>
+    <div id="box3" class="box" style="background-color: palegreen;">Rotate</div>
+    <div id="box4" class="box" style="background-color: palegoldenrod;">Rotate</div>
+</body>
+</html>

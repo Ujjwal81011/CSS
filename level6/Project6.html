@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project6</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        nav a{text-decoration: none;}
+        header{background-color: palegreen;}
+        nav{display: flex;
+            justify-content: space-around;
+            height: 20px;
+            padding-top: 5px;}        
+        #image{border: 3px solid;
+                display: flex;
+                justify-content: center;
+                margin: 5px;
+                align-items: center;
+                height: 300px;}
+        img{height: 200px;
+            border: 2px solid;
+            border-radius: 5px;}
+        .box{height: 150px;
+            width: 250px;
+            border: 2px solid;
+            margin: 5px;}
+        #boxes{border: 3px solid;
+                display: flex;
+                height: 300px;
+                width: 600px;
+                justify-content: center;
+                align-items: center;
+                background-color: lavender;}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Menu</a>
+        <a href="#">Cart</a>
+    </nav>
+    </header>
+    <main>
+        <div id="image">
+        <img src="india.jpeg" alt="Bharat"></div>
+        <div id="boxes">
+            <div id="box1" class="box" style="background-color: palegreen; flex-shrink: 5;">BOX1</div>
+            <div id="box2" class="box" style="background-color: aqua; flex-grow: 5;">BOX2</div>
+            <div id="box3" class="box" style="background-color: lightblue;">BOX3</div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
